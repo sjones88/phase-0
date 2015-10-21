@@ -28,3 +28,9 @@ rm - deletes a file
 help (man) - displays the manual for a given command
 
 ## 1.4 Forking and Cloning ##
+
+To create a new GitHub repository, go to your github.com profile, click the plus sign in the top right corner, and click "New repository." Enter the name of your new repo in the "Repository name" field, select either 'Public' or 'Private', and add a suitable license before finally clicking "Create repository."
+
+To fork an existing repository, navigate to the repository's page and click the "Fork" button near the top right corner of the page. To clone the newly-forked repository to your computer, find the "HTTPS clone URL" in the right column of the repo's page. Copy that URL. Go to your command line and type "git clone [repo URL]" (instead of "[repo URL]" paste the URL that you just copied.)
+
+I can honestly say that the instructions were so clear that I didn't really struggle with setting up git and GitHub. I learned the basics of using git - creating a new repositories and forking and cloning existing repos.
