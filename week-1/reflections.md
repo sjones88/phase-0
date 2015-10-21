@@ -8,8 +8,23 @@ Current time management habits:
 
 ## 1.2 The Command Line ##
 
-Git is a popular version control system, and GitHub is the website that serves as a GUI extension of Git. When handling the actual code of a Git-based project, developers interact with Git through the command line interface - not through the GitHub website or app.
-
-Version control systems allow multiple users to track changes they've made to a project without unintentionally altering the original project file. Users can download the latest project files and modify their copies of those files without changing the originals. GitHub helps by organizing a project in a tree-like model. The code base is the "trunk," and users can create 'branches' by uploading their modified files. A commit is created when a user uploads changed files to Git.
+CLI reflection:
+What is a shell? What is bash?
+	A shell is a text-based interface through which a user can pass commands to a computer's operating system. Bash is a specific type of Unix shell.
+Biggest challenge?
+	At first I found it challenging to memorize the list of basic commands, but after a bit of practice with them, memorization has become less of an issue. I have been able to successfully use and understand most of the basic commands, but the list of arguments/operands associated with each command is quite daunting.
+Most important commands and arguments?
+	The commands for navigating around the file system and creating and deleting files and directories are probably the most important to learn first (e.g. pwd, ls, mv, cd, mkdir, rmdir, rm).
+pwd - print working directory. This prints the current directory (or folder) to the shell.
+ls - lists the contents of the current directory
+mv - moves files or directories
+cd - change directory
+../ - selects all parent directories
+touch - creates a new empty file
+mkdir - creates a new directory within the working directory
+less - displays the content of a text file in pages
+rmdir - deletes an empty directory
+rm - deletes a file
+help (man) - displays the manual for a given command
 
 ## 1.4 Forking and Cloning ##
