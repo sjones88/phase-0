@@ -78,3 +78,33 @@ a:visited {
 #copyright {
     font-size: .5em;
 }
+
+/*
+- What is important to know when linking an external file (like a stylesheet) 
+to an html file?
+The link has to be written in such a way that the computer can navigate from
+the html file to the css file. For example, if my html file is located at 
+/phase-0/week-2/berkshire/berkshire.html and my CSS file is located at 
+/phase-0/week-3/stylesheets/berkshire.css, then my link would be 
+../../../week-3/stylesheets/berkshire.css.
+
+- What tricks did you use to help you with positioning? How hard was it to 
+get the site as you wanted it?
+We manipulated the padding property to fine tune our positioning. Because the original
+site is so simple, it wasn't particularly difficult to get the site the way we wanted it.
+
+- What CSS did you use to modify the element style?
+We adjusted font-size, color, background-color, and line height to modify element styles.
+
+- Did you modify the html to include classes or ids? If so, which did you 
+choose and why? If you didn't, how would you know which one to add to your html?
+We used a combination of IDs and classes. We noted that they function in almost 
+exactly the same way and the difference between them seems to be arbitrary.
+
+- When you compared your site to the actual code base, which do you think 
+had cleaner code that followed best practices and why?
+Our code base was cleaner because the links are organized into two unordered lists.
+The actual code base organizes the links into a table, which seems like an unnecessary complication
+of the code.
+
+*/
