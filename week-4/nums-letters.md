@@ -10,9 +10,9 @@ puts 60 * 24 * 365 * 10
 ```ruby
 puts 60 * 60 * 24 * 365 * 27
 ```
-![basic-math.rb](https://github.com/sjones88/phase-0/blob/master/week-4/basic-math.rb)
-![defining-variables.rb](https://github.com/sjones88/phase-0/blob/master/week-4/defining-variables.rb)
-![simple-string.rb](https://github.com/sjones88/phase-0/blob/master/week-4/simple-string.rb)
+[basic-math.rb](https://github.com/sjones88/phase-0/blob/master/week-4/basic-math.rb)
+[defining-variables.rb](https://github.com/sjones88/phase-0/blob/master/week-4/defining-variables.rb)
+[simple-string.rb](https://github.com/sjones88/phase-0/blob/master/week-4/simple-string.rb)
 
 ### What does puts do?
 
