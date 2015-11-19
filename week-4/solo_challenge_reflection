@@ -1,0 +1,14 @@
+- What does it mean to iterate over an array?
+When you iterate over an array, you are calling a method on each element of the array, one element at a time, and returning the result. The result is either assigned to a variable or returned 'in place', thereby changing the original array.
+
+- How are arrays structured? What can they contain?
+Arrays are structured as matricies which are one directional by default but can gain dimensions by containing other arrays containing more than one object. They can contain objects like strings, integers, floats, or boolean values.
+
+- Based on what you've learned, what is the best way to access values in a hash?
+The best way to access values is by referring to their associated keys. You do this by typing something like this: array_name['key_name']
+
+- What are some important things to remember about hash keys and uniqueness?
+Hash keys have to be unique; there can only be one key/value pair for any given key. However, keys can effectively point to multiple values by using an array as the value.
+
+- What are the main differences between arrays and hashes? When do you think one will be better than the other?
+A hash is essentially a special case of an array, in which keys replace numerical indices. Hashes are useful for functions like saving passwords and usernames. Arrays might be easier to work with if you're interested in doing linear algebra.
