@@ -67,3 +67,15 @@ p mode(["apple", "banana", "clementine", "banana", "cherry", "strawberry", "cher
 
 
 # 4. Reflection
+=begin
+- Which data structure did you and your pair decide to implement and why?
+
+- Were you more successful breaking this problem down into implementable pseudocode
+than the last with a pair?
+
+- What issues/successes did you run into when translating your pseudocode to code?
+
+- What methods did you use to iterate through the content? Did you find any good ones 
+when you were refactoring? Were they difficult to implement?
+
+=end

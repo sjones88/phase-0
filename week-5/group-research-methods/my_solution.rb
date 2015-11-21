@@ -1,9 +1,9 @@
 # Research Methods
 
-# I spent [] hours on this challenge.
+# I spent 3 hours on this challenge.
 
-#i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
-#my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
+i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
+my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
 
 # Person 1's solution
 def my_array_finding_method(source, thing_to_find)
@@ -33,26 +33,37 @@ end
 #
 #
 
-i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
-my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
+#i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
+#my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
 
 # Person 3
 def my_array_sorting_method(source)
-  source = source.map { |a| a.to_s }
-  source.sort {|x,y| x <=> y}
+  strings = source.grep(String)
+  ints = source.grep(Fixnum)
+  sorted_strings = strings.sort { |x,y| x <=> y }
+  sorted_ints = ints.sort { |x,y| x <=> y }
+  sorted_source = sorted_strings.unshift(sorted_ints).flatten!
 end
-p my_array_sorting_method(i_want_pets)
+
 
 def my_hash_sorting_method(source)
   src_ary = source.to_a
-  src_ary.sort { |x,y| x <=> y }
+  src_ary.sort_by! { |x,y| y }
 end
-p my_hash_sorting_method(my_family_pets_ages)
+
+#p my_hash_sorting_method(my_family_pets_ages)
+#p my_array_sorting_method(i_want_pets)
+
 =begin
 Identify and describe the Ruby method(s) you implemented.
-- map: 
-- to_s:
+- grep: Calling grep on 'source' with the 'String' argument returns an array of the strings in the 'source' array.
+It excludes anything in 'source' that isn't a string (in this case, it excludes the integers). The same idea applies
+on the next line, where I call grep on 'source' to return an array of the Fixnums in 'source'.
+- unshift: 
+- flatten!:
 - sort:
+- sort_by!
+- to_a
 =end
 
 
