@@ -2,13 +2,16 @@
 
 # I worked on this challenge by myself
 
-# I spent [] hours on this challenge.
+# I spent 3 hours on this challenge.
 
 # 0. Pseudocode
 
-# Input:
-# Output:
+# Input: an integer - number of sides of a die
+# Output: an integer - result of rolling the [input-number]-sided die
 # Steps:
+# - create instance variable for # of sides
+# - generate a random integer between 1 and [number-of-sides]
+# - raise an error if sides argument is less than 1
 
 
 # 1. Initial Solution
