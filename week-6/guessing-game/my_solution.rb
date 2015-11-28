@@ -21,7 +21,7 @@ returns false if 'guess' does not equal 'answer.'
 
 =end
 # Initial Solution
-
+=begin
 class GuessingGame
   def initialize(answer)
     @answer = answer
@@ -50,34 +50,50 @@ class GuessingGame
   end
 end
 game = GuessingGame.new(10)
-
+=end
 
 # Refactored Solution
+
 class GuessingGame
 	def initialize(answer)
 		@answer = answer
+    unless answer >= 0
+      raise ArgumentError.new('Please enter a non-negative integer.')
+    end
 	end
 
-	def guess
-		@last_guess = last_guess
-		@last_result = last_result
-		puts ""
-		guess = gets.chomp.to_i
+	def guess(guess)
+		@guess = guess
+    if guess > @answer
+      :high
+    elsif guess < @answer
+      :low
+    else
+      :correct
+    end
 	end
 
 	def solved?
+    if @guess == @answer
+      return true
+    else
+      return false
+    end
 	end
 end
 
-
-
-
-
-
-
-
-
-
-
-
 # Reflection
+=begin
+- How do instance variables and methods represent the characteristics and behaviors (actions) of a real-world object?
+
+
+- When should you use instance variables? What do they do for you?
+
+
+- Explain how to use flow control. Did you have any trouble using it in this challenge? If so, what did you struggle with?
+
+
+- Why do you think this code requires you to return symbols? What are the benefits of using symbols?
+
+
+=end
