@@ -96,6 +96,8 @@ You can only use instance variables within a class that you've created. Within t
 Flow control is the use of conditional statements within a method to allow the method to take different courses of action depending on the input that the method receives.
 
 - Why do you think this code requires you to return symbols? What are the benefits of using symbols?
-
+I read section 8.2 of 'Rubyist' and I'm still not quite sure why this challenge requires you to return symbols. However, my guess is we need to return symbols because symbols
+don't change after they are created. If you call .object_id on a symbol any number of times, you will always return the same object id, while this is not true of strings.
+It (vaguely) makes sense to me that we would want to return the same objects (:high, :low, or :correct) when our guess is evaluated.
 
 =end
