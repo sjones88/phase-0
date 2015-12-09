@@ -1,3 +1,5 @@
+[Schema screenshot](https://github.com/sjones88/phase-0/blob/master/week-8/database-intro/persons_outfits_schema.png)
+
 1. select * from states;
 2. select * from regions;
 3. select state_name,population from states;
